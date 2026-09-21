@@ -1,7 +1,9 @@
+import { Section } from "@/components/layout/section";
+
 export default function Home() {
   return (
     <main>
-      <section className="container">
+      <Section>
         <div
           style={{
             minHeight: "70vh",
@@ -50,7 +52,7 @@ export default function Home() {
             interfaces, and practical AI-powered applications.
           </p>
         </div>
-      </section>
+      </Section>
     </main>
   );
 }
