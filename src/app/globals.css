@@ -13,6 +13,10 @@
   --foreground-secondary: #a5a5a5;
   --foreground-muted: #707070;
 
+  --content-width: 1280px;
+  --page-gutter: 40px;
+  --section-spacing: 160px;
+
   --font-geist: "Geist", sans-serif;
 }
 
@@ -64,5 +68,17 @@ svg {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+.container {
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-width));
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --page-gutter: 20px;
+    --section-spacing: 96px;
   }
 }
