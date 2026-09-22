@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { navigationItems, githubUrl } from "./navigation-items";
+import { navigationItems } from "./navigation-items";
+import { siteConfig } from "@/config/site";
 
 export function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,7 +95,7 @@ export function MobileNavigation() {
             <li className="mt-2 border-t border-[var(--border-subtle)] pt-3">
               <a
                 className="block py-3 text-sm font-medium text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
-                href={githubUrl}
+                href={siteConfig.githubUrl}
                 target="_blank"
                 rel="noreferrer"
                 onClick={handleNavigation}
