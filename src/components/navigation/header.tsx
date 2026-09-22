@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MobileNavigation } from "./mobile-navigation";
-import { navigationItems, githubUrl } from "./navigation-items";
+import { navigationItems } from "./navigation-items";
+import { siteConfig } from "@/config/site";
 
 export function Header() {
   return (
@@ -31,7 +32,7 @@ export function Header() {
         <div className="hidden md:block">
           <a
             className="shrink-0 text-[13px] font-medium text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
-            href={githubUrl}
+            href={siteConfig.githubUrl}
             target="_blank"
             rel="noreferrer"
           >

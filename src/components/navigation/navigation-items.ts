@@ -4,5 +4,3 @@ export const navigationItems = [
   { label: "Open Source", href: "#open-source" },
   { label: "About", href: "#about" },
 ] as const;
-
-export const githubUrl = "https://github.com/UzairMalik17";
