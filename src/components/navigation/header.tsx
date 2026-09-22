@@ -1,11 +1,6 @@
 import Link from "next/link";
-
-const navigationItems = [
-  { label: "Work", href: "#work" },
-  { label: "Experience", href: "#experience" },
-  { label: "Open Source", href: "#open-source" },
-  { label: "About", href: "#about" },
-];
+import { MobileNavigation } from "./mobile-navigation";
+import { navigationItems, githubUrl } from "./navigation-items";
 
 export function Header() {
   return (
@@ -18,7 +13,7 @@ export function Header() {
           Uzair Malik
         </Link>
 
-        <nav aria-label="Main navigation">
+        <nav aria-label="Main navigation" className="hidden md:block">
           <ul className="flex items-center gap-7">
             {navigationItems.map((item) => (
               <li key={item.href}>
@@ -33,14 +28,18 @@ export function Header() {
           </ul>
         </nav>
 
-        <a
-          className="shrink-0 text-[13px] font-medium text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
-          href="https://github.com/UzairMalik17"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub <span aria-hidden="true">↗</span>
-        </a>
+        <div className="hidden md:block">
+          <a
+            className="shrink-0 text-[13px] font-medium text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
+            href={githubUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <MobileNavigation />
       </div>
     </header>
   );
