@@ -3,9 +3,9 @@ import { Container } from "../layout/container";
 
 export function Hero() {
   return (
-    <section className="min-h-[calc(100vh-72px)]">
+    <section>
       <Container>
-        <div className="flex min-h-[calc(100vh-72px)] flex-col justify-center py-24">
+        <div className="flex min-h-[calc(100vh-72px)] flex-col justify-center">
           <p className="text-xs font-medium uppercase tracking-[0.12em] text-[var(--foreground-muted)]">
             Software Engineer
           </p>
