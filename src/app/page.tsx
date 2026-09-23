@@ -2,6 +2,7 @@ import { Header } from "@/components/navigation/header";
 import { Hero } from "@/components/hero/hero";
 import { SelectedWork } from "@/components/selected-work/selected-work";
 import { Experience } from "@/components/experience/experience";
+import { OpenSource } from "@/components/open-source/open-source";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <SelectedWork />
         <Experience />
+        <OpenSource />
       </main>
     </>
   );
