@@ -16,7 +16,6 @@
 
   --content-width: 1280px;
   --page-gutter: 40px;
-  --section-spacing: 160px;
 
   --font-geist: "Geist", sans-serif;
 }
@@ -84,20 +83,14 @@ svg {
   margin-inline: auto;
 }
 
-.section {
-  padding-block: var(--section-spacing);
-}
-
 @media (max-width: 1024px) {
   :root {
     --page-gutter: 32px;
-    --section-spacing: 120px;
   }
 }
 
 @media (max-width: 640px) {
   :root {
     --page-gutter: 20px;
-    --section-spacing: 96px;
   }
 }
