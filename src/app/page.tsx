@@ -1,6 +1,7 @@
 import { Header } from "@/components/navigation/header";
 import { Hero } from "@/components/hero/hero";
 import { SelectedWork } from "@/components/selected-work/selected-work";
+import { Experience } from "@/components/experience/experience";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="flex flex-col gap-20 sm:gap-24 lg:gap-32">
         <Hero />
         <SelectedWork />
+        <Experience />
       </main>
     </>
   );
