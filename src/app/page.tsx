@@ -4,6 +4,7 @@ import { SelectedWork } from "@/components/selected-work/selected-work";
 import { Experience } from "@/components/experience/experience";
 import { OpenSource } from "@/components/open-source/open-source";
 import { About } from "@/components/about/about";
+import { Playground } from "@/components/playground/playground";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Experience />
         <OpenSource />
         <About />
+        <Playground />
       </main>
     </>
   );
