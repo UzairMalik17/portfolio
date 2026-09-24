@@ -6,6 +6,7 @@ import { OpenSource } from "@/components/open-source/open-source";
 import { About } from "@/components/about/about";
 import { Playground } from "@/components/playground/playground";
 import { Contact } from "@/components/contact/contact";
+import { Footer } from "@/components/footer/footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         <Playground />
         <Contact />
       </main>
+
+      <Footer />
     </>
   );
 }
