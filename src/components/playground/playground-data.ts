@@ -14,7 +14,7 @@ export const playgroundProjects: readonly PlaygroundProject[] = [
     category: "AI developer tooling",
     description:
       "A repository-aware AI developer assistant for exploring and understanding existing codebases.",
-    technologies: ["Next.js", "TypeScript", "AI"],
+    technologies: ["Next.js", "TypeScript"],
     status: "In progress",
     href: "https://github.com/UzairMalik17/devflow-ai",
     linkLabel: "View source",

@@ -9,14 +9,6 @@ export const experiences = [
       "Built and maintained NestJS backend services with MySQL and TypeORM, including JWT authentication and REST APIs.",
       "Worked across React and Next.js applications, contributing to client-facing features and API integrations.",
     ],
-    technologies: [
-      "React",
-      "Next.js",
-      "NestJS",
-      "MySQL",
-      "TypeORM",
-      "Supabase",
-    ],
   },
   {
     company: "ThreeUpTech",
@@ -28,14 +20,6 @@ export const experiences = [
       "Worked on a website builder using Go templates, SEO metadata, and custom search functionality.",
       "Developed tooling around Follow Up Boss for lead synchronization, data cleanup, and workflow management.",
       "Built workflow automations using n8n to reduce repetitive operational tasks.",
-    ],
-    technologies: [
-      "React",
-      "Express.js",
-      "Go Templates",
-      "APIs",
-      "n8n",
-      "Follow Up Boss",
     ],
   },
 ] as const;

@@ -32,9 +32,7 @@ export function Experience() {
                   : "border-b border-[var(--border)]"
               }
             >
-              <div className="py-16 sm:py-20">
-                <ExperienceItem experience={experience} />
-              </div>
+              <ExperienceItem experience={experience} />
             </div>
           ))}
         </div>
