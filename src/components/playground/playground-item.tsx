@@ -33,12 +33,12 @@ export function PlaygroundItem({ project, number }: PlaygroundItemProps) {
 
         <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
           {project.technologies.map((technology) => (
-            <span
+            <li
               key={technology}
-              className="text-sm text-[var(--foreground-muted)]"
+              className="text-sm list-none text-[var(--foreground-muted)]"
             >
               {technology}
-            </span>
+            </li>
           ))}
         </div>
 

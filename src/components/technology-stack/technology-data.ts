@@ -14,24 +14,15 @@ export const technologyCategories: readonly TechnologyCategory[] = [
   },
   {
     name: "Backend",
-    technologies: ["Node.js", "NestJS", "Express.js"],
+    technologies: ["Node.js", "NestJS", "Express.js", "TypeORM", "Prisma"],
   },
   {
     name: "Databases",
     technologies: ["PostgreSQL", "MySQL", "MongoDB"],
   },
   {
-    name: "ORMs",
-    technologies: ["TypeORM", "Prisma"],
-  },
-  {
     name: "Integrations",
-    technologies: [
-      "Stripe",
-      "Zoho CRM",
-      "Follow Up Boss",
-      "Third-party AI APIs",
-    ],
+    technologies: ["Stripe", "Zoho CRM", "Follow Up Boss"],
   },
   {
     name: "Tools",

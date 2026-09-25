@@ -32,9 +32,7 @@ export function SelectedWork() {
                   : "border-b border-[var(--border)]"
               }
             >
-              <div className="py-16 sm:py-20">
-                <ProjectItem project={project} />
-              </div>
+              <ProjectItem project={project} />
             </div>
           ))}
         </div>
