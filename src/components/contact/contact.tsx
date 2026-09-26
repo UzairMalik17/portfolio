@@ -30,7 +30,7 @@ export function Contact() {
 
               <div className="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-8">
                 <a
-                  className="text-sm font-medium text-[var(--foreground)] underline decoration-[var(--foreground)] underline-offset-8 transition-opacity duration-200 hover:opacity-70"
+                  className="inline-flex py-2 text-sm font-medium text-[var(--foreground)] underline decoration-[var(--accent)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--accent-strong)]"
                   href={`mailto:${siteConfig.email}`}
                 >
                   Email me
@@ -40,7 +40,7 @@ export function Contact() {
                 </a>
 
                 <a
-                  className="text-sm text-[var(--foreground-muted)] underline decoration-[var(--border)] underline-offset-8 transition-colors duration-200 hover:text-[var(--foreground)] hover:decoration-[var(--foreground)]"
+                  className="inline-flex py-2 text-sm text-[var(--foreground-secondary)] underline decoration-[var(--foreground-muted)] underline-offset-8 transition-colors duration-200 hover:text-[var(--foreground)] hover:decoration-[var(--foreground)]"
                   href={siteConfig.githubUrl}
                   target="_blank"
                   rel="noreferrer"
@@ -52,7 +52,7 @@ export function Contact() {
                 </a>
 
                 <a
-                  className="text-sm text-[var(--foreground-muted)] underline decoration-[var(--border)] underline-offset-8 transition-colors duration-200 hover:text-[var(--foreground)] hover:decoration-[var(--foreground)]"
+                  className="inline-flex py-2 text-sm text-[var(--foreground-secondary)] underline decoration-[var(--foreground-muted)] underline-offset-8 transition-colors duration-200 hover:text-[var(--foreground)] hover:decoration-[var(--foreground)]"
                   href={siteConfig.linkedinUrl}
                   target="_blank"
                   rel="noreferrer"
