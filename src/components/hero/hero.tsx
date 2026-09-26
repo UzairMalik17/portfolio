@@ -7,7 +7,7 @@ export function Hero() {
       <Container>
         <div className="grid min-h-[calc(100vh-72px)] items-center gap-16 py-16 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-24 lg:py-20">
           <div>
-            <p className="animate-[hero-enter_600ms_cubic-bezier(0.22,1,0.36,1)_both] text-xs font-medium uppercase tracking-[0.12em] text-[var(--foreground-muted)]">
+            <p className="animate-[hero-enter_600ms_cubic-bezier(0.22,1,0.36,1)_both] text-xs font-medium uppercase tracking-[0.12em] text-[var(--accent)]">
               Software Engineer
             </p>
 
@@ -23,7 +23,7 @@ export function Hero() {
 
             <div className="mt-10 flex animate-[hero-enter_600ms_300ms_cubic-bezier(0.22,1,0.36,1)_both] items-center gap-6">
               <a
-                className="inline-flex py-2 text-sm font-medium text-[var(--foreground)] underline decoration-[var(--border)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--foreground)]"
+                className="inline-flex py-2 text-sm font-medium text-[var(--foreground)] underline decoration-[var(--accent)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--accent-strong)]"
                 href="#work"
               >
                 View my work
@@ -47,13 +47,10 @@ export function Hero() {
               </p>
 
               <a
-                className="mt-3 block text-lg font-medium leading-snug text-[var(--foreground)] transition-colors duration-200 hover:text-[var(--foreground-secondary)]"
+                className="mt-3 block text-lg font-medium leading-snug text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
                 href="#playground"
               >
                 Repository-aware AI developer tooling
-                <span className="ml-1.5 text-sm" aria-hidden="true">
-                  ↗
-                </span>
               </a>
             </div>
 

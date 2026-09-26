@@ -9,7 +9,7 @@ type ExperienceItemProps = {
 export function ExperienceItem({ experience }: ExperienceItemProps) {
   return (
     <article className="grid gap-8 py-10 lg:grid-cols-[120px_minmax(0,1fr)]">
-      <div className="text-xs font-medium tracking-[0.12em] text-[var(--foreground-muted)]">
+      <div className="text-xs font-medium tracking-[0.12em] text-[var(--accent)]">
         {experience.period}
       </div>
 

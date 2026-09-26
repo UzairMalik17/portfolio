@@ -3,7 +3,7 @@ import { Container } from "@/components/layout/container";
 export function Footer() {
   return (
     <footer className="pt-12">
-      <div className=" border-t border-[var(--border)]">
+      <div className="border-t border-[var(--border)]">
         <Container>
           <div className="flex items-center justify-between py-6">
             <p className="text-xs text-[var(--foreground-muted)]">
@@ -11,7 +11,7 @@ export function Footer() {
             </p>
 
             <a
-              className="text-xs text-[var(--foreground-muted)] transition-colors duration-200 hover:text-[var(--foreground)]"
+              className="inline-flex py-2 text-xs text-[var(--foreground-muted)] transition-colors duration-200 hover:text-[var(--foreground)]"
               href="#top"
             >
               Back to top

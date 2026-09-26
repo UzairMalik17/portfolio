@@ -8,9 +8,7 @@ type PlaygroundItemProps = {
 export function PlaygroundItem({ project, number }: PlaygroundItemProps) {
   return (
     <article className="grid gap-8 py-10 lg:grid-cols-[120px_minmax(0,1fr)]">
-      <p className="text-sm font-medium text-[var(--foreground-muted)]">
-        {number}
-      </p>
+      <p className="text-sm font-medium text-[var(--accent)]">{number}</p>
 
       <div>
         <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
@@ -31,19 +29,19 @@ export function PlaygroundItem({ project, number }: PlaygroundItemProps) {
           {project.description}
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+        <ul className="mt-6 flex list-none flex-wrap gap-x-5 gap-y-2">
           {project.technologies.map((technology) => (
             <li
               key={technology}
-              className="text-sm list-none text-[var(--foreground-muted)]"
+              className="text-sm text-[var(--foreground-muted)]"
             >
               {technology}
             </li>
           ))}
-        </div>
+        </ul>
 
         <a
-          className="mt-6 inline-flex py-2 text-sm font-medium text-[var(--foreground)] underline decoration-[var(--border)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--foreground)]"
+          className="mt-6 inline-flex py-2 text-sm font-medium text-[var(--foreground)] underline decoration-[var(--accent)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--accent-strong)]"
           href={project.href}
           target="_blank"
           rel="noreferrer"

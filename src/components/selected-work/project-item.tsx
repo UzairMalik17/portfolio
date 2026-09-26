@@ -7,7 +7,7 @@ type ProjectItemProps = {
 export function ProjectItem({ project }: ProjectItemProps) {
   return (
     <article className="grid gap-8 py-10 lg:grid-cols-[120px_minmax(0,1fr)]">
-      <div className="text-xs font-medium tracking-[0.12em] text-[var(--foreground-muted)]">
+      <div className="text-xs font-medium tracking-[0.12em] text-[var(--accent)]">
         {project.number}
       </div>
 
@@ -38,7 +38,7 @@ export function ProjectItem({ project }: ProjectItemProps) {
         </ul>
 
         <a
-          className="mt-7 inline-flex text-sm font-medium text-[var(--foreground)] underline decoration-[var(--border)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--foreground)]"
+          className="mt-7 inline-flex py-2 text-sm font-medium text-[var(--foreground)] underline decoration-[var(--accent)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--accent-strong)]"
           href={project.href}
           target="_blank"
           rel="noreferrer"

@@ -1,7 +1,7 @@
+import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { MobileNavigation } from "./mobile-navigation";
 import { navigationItems } from "./navigation-items";
-import { siteConfig } from "@/config/site";
 
 export function Header() {
   return (
@@ -19,7 +19,7 @@ export function Header() {
             {navigationItems.map((item) => (
               <li key={item.href}>
                 <a
-                  className="text-[13px] font-medium text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
+                  className="py-2 text-[13px] font-medium text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
                   href={item.href}
                 >
                   {item.label}
@@ -31,7 +31,7 @@ export function Header() {
 
         <div className="hidden md:block">
           <a
-            className="shrink-0 text-[13px] font-medium text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
+            className="shrink-0 py-2 text-[13px] font-medium text-[var(--foreground-secondary)] transition-colors duration-200 hover:text-[var(--foreground)]"
             href={siteConfig.githubUrl}
             target="_blank"
             rel="noreferrer"

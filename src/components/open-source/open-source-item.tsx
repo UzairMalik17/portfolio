@@ -7,9 +7,7 @@ type OpenSourceItemProps = {
 export function OpenSourceItem({ contribution, number }: OpenSourceItemProps) {
   return (
     <article className="grid gap-8 py-10 lg:grid-cols-[120px_minmax(0,1fr)]">
-      <p className="text-sm font-medium text-[var(--foreground-muted)]">
-        {number}
-      </p>
+      <p className="text-sm font-medium text-[var(--accent)]">{number}</p>
 
       <div>
         <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
@@ -28,7 +26,7 @@ export function OpenSourceItem({ contribution, number }: OpenSourceItemProps) {
         </p>
 
         <a
-          className="mt-6 inline-flex py-2 text-sm font-medium text-[var(--foreground)] underline decoration-[var(--border)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--foreground)]"
+          className="mt-6 inline-flex py-2 text-sm font-medium text-[var(--foreground)] underline decoration-[var(--accent)] underline-offset-8 transition-colors duration-200 hover:decoration-[var(--accent-strong)]"
           href={contribution.href}
           target="_blank"
           rel="noreferrer"
